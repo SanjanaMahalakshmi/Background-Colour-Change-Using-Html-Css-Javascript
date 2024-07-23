@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: x-large;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#para{
+    margin-top: -100px;
+    color: whitesmoke;
+    border: 1px solid black;
+    font-size: large;
+    padding: 5px;
+    background-color: black;
+}

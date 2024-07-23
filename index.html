@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="changebutton" onclick="changeBackgroundColor()">CLICK HERE</button>
+    <p id="para"></p>
+    <script >
+        let colors = ['pink', 'lightblue','lightgreen','lightgray'];
+        let index = 0;
+
+       function changeBackgroundColor() 
+       {
+        document.body.style.backgroundColor = colors[index];
+        
+        let button = document.getElementById('changebutton');
+        button.style.backgroundColor = colors[index];
+        
+        let newPara = document.getElementById("para");
+        newPara.innerText = `BACKGROUND COLOUR : ${colors[index]}`;
+        index = (index + 1) % colors.length;
+       }
+
+    </script>
+</body>
+</html>
